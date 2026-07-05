@@ -13,10 +13,10 @@ function App() {
   } = useTodos();
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-100 to-indigo-50 py-10 px-4 sm:px-6 flex items-start sm:items-center justify-center">
+    <div className="min-h-screen bg-gradient-to-br from-slate-100 to-indigo-50 py-6 px-3 sm:py-10 sm:px-6 flex items-start sm:items-center justify-center">
       <div className="max-w-3xl w-full mx-auto bg-white rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] overflow-hidden border border-white/20 backdrop-blur-xl">
-        <div className="p-6 sm:p-10">
-          <header className="mb-10 flex flex-col sm:flex-row sm:items-center justify-between gap-6 border-b border-slate-100 pb-8">
+        <div className="p-4 sm:p-10">
+          <header className="mb-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-100 pb-6">
             <div>
               <h1 className="text-4xl font-extrabold text-slate-800 tracking-tight">Focus.</h1>
               <p className="text-slate-500 mt-2 font-medium">Organize your workflow effectively.</p>

@@ -28,7 +28,7 @@ export default function TodoInput({ onAdd }) {
 
   return (
     <form onSubmit={handleSubmit} className="w-full">
-      <div className="flex gap-2 p-1 bg-white/60 backdrop-blur-sm rounded-2xl border border-slate-100 shadow-sm focus-within:shadow-md focus-within:border-indigo-100 transition-all">
+      <div className="flex gap-1 sm:gap-2 p-1 bg-white/60 backdrop-blur-sm rounded-2xl border border-slate-100 shadow-sm focus-within:shadow-md focus-within:border-indigo-100 transition-all">
         <input
           type="text"
           value={text}
@@ -37,11 +37,11 @@ export default function TodoInput({ onAdd }) {
             if (error) setError('');
           }}
           placeholder="What needs to be done?"
-          className="flex-1 px-4 py-3 bg-transparent border-none focus:outline-none focus:ring-0 text-slate-700 placeholder:text-slate-400"
+          className="flex-1 px-3 sm:px-4 py-3 bg-transparent border-none focus:outline-none focus:ring-0 text-slate-700 placeholder:text-slate-400 min-w-0"
         />
         <button
           type="submit"
-          className="px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-medium transition-colors flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+          className="px-4 sm:px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-medium shrink-0 transition-colors flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
         >
           Add
         </button>
